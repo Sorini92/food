@@ -38,16 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     //timer
-    const deadline = '2021-06-20';
+    const deadline = '2021-07-21';
 
     function getTimeRemaining (endtime) {
         const t = Date.parse(endtime) - Date.parse(new Date()),
-        days = Math.floor(t / (1000 * 60* 60 * 24)),
-        hours = Math.floor((t / (1000 * 60 * 60) % 24)),
-        minutes = Math.floor((t / 1000 / 60) % 60),
-        seconds = Math.floor((t / 1000) % 60);
-
-        return {
+              days = Math.floor(t / (1000 * 60* 60 * 24)),
+              hours = Math.floor((t / (1000 * 60 * 60) % 24)),
+              minutes = Math.floor((t / 1000 / 60) % 60),
+              seconds = Math.floor((t / 1000) % 60);
+        return  {
             'total': t,
             'days': days,
             'hours': hours,
@@ -89,4 +88,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setClock('.timer', deadline);
+
+    function setClockDescriprion (i) {
+        const day = deadline.slice(8,10),
+              month = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 
+              'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря',],
+              getMonth = +deadline.slice(5,7),
+              div = document.createElement('div'),
+              wrapper = document.querySelector('.promotion__descr');
+            
+        div.classList.add('timer__descr');
+        div.innerHTML = `Акция закончится ${day} ${month[getMonth-1]} в 00:00`;
+        wrapper.append(div);
+    }
+
+    setClockDescriprion();
 });
