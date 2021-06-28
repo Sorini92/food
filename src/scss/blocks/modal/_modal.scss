@@ -65,4 +65,19 @@
         width: 280px;
         margin: 0 auto;
     }
+
+}
+
+.openanimation {
+    animation: openanimation;
+    animation-duration: 0.5s;
+}
+
+@keyframes openanimation {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
 }
