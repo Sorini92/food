@@ -209,6 +209,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
+    /* axios.get('http://localhost:3000/menu')
+        .tnen(data => {
+            data.data.forEach(({img, altimg, title, descr, price}) => {
+                new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
+        }); */
+
     new MenuCard(
         "img/tabs/vegy.jpg",
         "vegy",
