@@ -356,6 +356,7 @@ a {
     width: 100%;
     background: rgba(249, 254, 126, 0.25); }
   .menu__item {
+    margin-top: 30px;
     width: 320px;
     min-height: 450px;
     background: #FFFFFF;
