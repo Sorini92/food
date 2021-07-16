@@ -335,5 +335,55 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('http://localhost:3000/menu')
         .then(data => data.json())
         .then(res => console.log(res));
+
+    //slider
+
+    const slides = document.querySelectorAll('.offer__slide'),
+          prev = document.querySelector('.offer__slider-prev'),
+          next = document.querySelector('.offer__slider-next');
+    let current = document.getElementById('current'),
+        total = +document.getElementById('total'),
+        counter = 1,
+        numTotal = 4;
+    
+    total.innerHTML = `0${numTotal}`;
+
+    function hideSlides() {
+        slides.forEach(item => {
+            item.classList.add('hide');
+            item.classList.remove('show');
+        });
+    }
+
+    function showSlides() {
+        slides[counter-1].classList.remove('hide');
+        slides[counter-1].classList.add('show');
+        if (counter < 10) {
+            current.innerHTML = `0${counter}`;
+        } else {
+            current.innerHTML = `${counter}`;
+        }
+    }
+
+    hideSlides();
+    showSlides();
+
+    next.addEventListener('click', () => {
+        if (counter >= numTotal) {
+            counter = 0;
+        }
+        counter++;
+        hideSlides();
+        showSlides(counter);       
+    });
+
+    prev.addEventListener('click', () => {
+        if (counter <= 1) {
+            counter = numTotal + 1;
+        }
+        counter--;
+        hideSlides();
+        showSlides(counter);       
+    });
 });
    
