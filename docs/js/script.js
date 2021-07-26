@@ -340,21 +340,9 @@
 
   return __webpack_require__(__webpack_require__.s = "./src/js/main.js");
   /******/
-})(
-/************************************************************************/
-
-/******/
-{
+})({
   /***/
-  "./src/js/main.js":
-  /*!************************!*\
-    !*** ./src/js/main.js ***!
-    \************************/
-
-  /*! no exports provided */
-
-  /***/
-  function (module, __webpack_exports__, __webpack_require__) {
+  "./src/js/main.js": function (module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -424,15 +412,7 @@
   },
 
   /***/
-  "./src/js/modules/calc.js":
-  /*!********************************!*\
-    !*** ./src/js/modules/calc.js ***!
-    \********************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function (module, __webpack_exports__, __webpack_require__) {
+  "./src/js/modules/calc.js": function (module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -556,15 +536,7 @@
   },
 
   /***/
-  "./src/js/modules/cards.js":
-  /*!*********************************!*\
-    !*** ./src/js/modules/cards.js ***!
-    \*********************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function (module, __webpack_exports__, __webpack_require__) {
+  "./src/js/modules/cards.js": function (module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -648,15 +620,7 @@
   },
 
   /***/
-  "./src/js/modules/forms.js":
-  /*!*********************************!*\
-    !*** ./src/js/modules/forms.js ***!
-    \*********************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function (module, __webpack_exports__, __webpack_require__) {
+  "./src/js/modules/forms.js": function (module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -749,15 +713,7 @@
   },
 
   /***/
-  "./src/js/modules/modal.js":
-  /*!*********************************!*\
-    !*** ./src/js/modules/modal.js ***!
-    \*********************************/
-
-  /*! exports provided: default, closeModal, openModal */
-
-  /***/
-  function (module, __webpack_exports__, __webpack_require__) {
+  "./src/js/modules/modal.js": function (module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -828,15 +784,7 @@
   },
 
   /***/
-  "./src/js/modules/slider.js":
-  /*!**********************************!*\
-    !*** ./src/js/modules/slider.js ***!
-    \**********************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function (module, __webpack_exports__, __webpack_require__) {
+  "./src/js/modules/slider.js": function (module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -1030,15 +978,7 @@
   },
 
   /***/
-  "./src/js/modules/tabs.js":
-  /*!********************************!*\
-    !*** ./src/js/modules/tabs.js ***!
-    \********************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function (module, __webpack_exports__, __webpack_require__) {
+  "./src/js/modules/tabs.js": function (module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -1088,15 +1028,7 @@
   },
 
   /***/
-  "./src/js/modules/timer.js":
-  /*!*********************************!*\
-    !*** ./src/js/modules/timer.js ***!
-    \*********************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function (module, __webpack_exports__, __webpack_require__) {
+  "./src/js/modules/timer.js": function (module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -1171,15 +1103,7 @@
   },
 
   /***/
-  "./src/js/services/services.js":
-  /*!*************************************!*\
-    !*** ./src/js/services/services.js ***!
-    \*************************************/
-
-  /*! exports provided: postData, getResource */
-
-  /***/
-  function (module, __webpack_exports__, __webpack_require__) {
+  "./src/js/services/services.js": function (module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
